@@ -1,0 +1,9 @@
+.boite{
+    background-color: green;
+    height: 500px;
+    width: 500px;
+}
+.para{
+    font-weight: bold;
+    font-size: 30px  ;
+}

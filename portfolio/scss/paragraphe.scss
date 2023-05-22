@@ -1,0 +1,31 @@
+.paragraphe {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}  
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .paragraphe {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }  
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .paragraphe {
+        padding-bottom: 0px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-size: 30px;
+    }  
+}
+@media screen and (min-width: 1001px) {
+    .paragraphe {
+        padding-bottom: 0px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        font-size: 40px;
+    }  
+}

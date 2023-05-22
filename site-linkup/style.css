@@ -1,0 +1,847 @@
+.body {
+    /* background-color: rgb(255, 0, 0); */
+    padding: 10px;
+}
+
+/*HEADER--------------------------------------------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 25px;
+}
+
+.nav-mobile {
+    margin-top: 50px;
+    margin-right: 25px;
+}
+
+.nav-ordi {
+    display: none;
+}.aaa{
+    width: 40%;
+}
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+}
+
+.menu {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.bann-acc {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about {
+    text-align: center;
+    height: 100px;
+}
+
+.moi {
+    text-align: center;
+    font-size: 10px;
+    background-color: rgb(144, 144, 144);
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.moi-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*PRESENTATION--------------------------------------------------------------------------*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #f1f1f1;
+    
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 300px;
+    background: #f1f1f1;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container-onglets{
+    margin-top: 25px;
+    background: #f1f1f1;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+.onglets {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+.onglets:not(:nth-child(3)) {
+    border-right: 1px solid #333;
+}
+
+.contenu {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.contenu h3 {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+.contenu hr {
+    width: 30%;
+    height: 2px;
+    margin-left: 20px;
+    background: #000;
+    border: none;
+}
+.contenu p {
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* Anim */
+
+.active {
+    background: midnightblue;
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.activeContenu {
+    animation: fade 0.5s forwards;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.services {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    height: 600px;
+    background-color: rgb(180, 180, 180);
+}
+
+.services-article {
+    border-radius: 30px;
+    width: 1000px;
+    margin-bottom: 10px;
+    margin: 10px;
+    height: 400px;
+    background-color: rgb(139, 139, 139);
+}
+
+.services-article-title {
+    text-transform: uppercase;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.services-article-para {
+    text-align: center;
+    font-size: 8.6px;
+}
+
+.all-article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-title {
+    margin-bottom: 45px;
+    text-decoration: underline;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+.photo{
+    margin-bottom: 25px ;
+}
+
+/* TEMOIGNAGES---------------------------------------------- */
+
+.temoignages {
+    border-radius: 30px;
+    background-color: rgb(141, 141, 141);
+    height: 800px;
+    margin-top: 400px;
+}
+
+.temoignages-title {
+    padding-top: 20px;
+    text-decoration: underline;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.carte {
+    border: 1px solid black;
+    margin-top: 35px;
+    height: 100px;
+    width: 185px;
+    background-color: rgb(187, 187, 187);
+}
+
+.carte-header {
+    border: 1px solid black;
+    display: flex;
+}
+
+.carte-header-titre {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.carte-para {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 8px;
+}
+
+.carte-right {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 15px;
+}
+
+.carte-left {
+    margin-left: 15px;
+}
+
+/* CONTACT--------------------------------------------------------------------- */
+
+.contact {
+    margin-top: 30px;
+    background-color: rgb(182, 182, 182);
+    height: 370px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.contact-title {
+    padding-top: 20px;
+    text-decoration: underline;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER-------------------------------------------------------------------------- */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: rgb(153, 152, 152);
+    height: 150px;
+}
+
+.icone {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* HEADER---------------------------------------------------------------------- */
+    .bann-acc {
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    /* TEMOIGNAGES---------------------------------------------------------------------- */
+    .temoignages {
+        border-radius: 30px;
+        background-color: rgb(141, 141, 141);
+        height: 1000px;
+        margin-top: 400px;
+    }
+    .temoignages-title {
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .carte {
+        border: 1px solid black;
+        margin-top: 25px;
+        height: 120px;
+        width: 225px;
+        background-color: rgb(187, 187, 187);
+    }
+    .carte-header {
+        border: 1px solid black;
+        display: flex;
+    }
+    .carte-header-titre {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    .carte-para {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 10px;
+    }
+    .carte-right {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 15px;
+    }
+    .carte-left {
+        margin-left: 15px;
+    }
+    /* CONTACT---------------------------------------------------------------------- */
+    .contact {
+        margin-top: 30px;
+        background-color: rgb(182, 182, 182);
+        height: 360px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+    .contact-title {
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .input {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    /* FOOTER---------------------------------------------------------------------- */
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    /* HEADER---------------------------------------------------------------------- */
+    .header {
+        display: flex;
+        justify-content: left;
+    }
+    .bann-acc {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .moi {
+        margin-top: 100px;
+    }
+    /* TEMOIGNAGES---------------------------------------------------------------------- */
+    .temoignages {
+        border-radius: 30px;
+        background-color: rgb(141, 141, 141);
+        height: 1400px;
+        margin-top: 500px;
+    }
+    .temoignages-title {
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .carte {
+        border: 1px solid black;
+        margin-top: 40px;
+        height: 170px;
+        width: 300px;
+        background-color: rgb(187, 187, 187);
+    }
+    .carte-header {
+        border: 1px solid black;
+        display: flex;
+    }
+    .carte-header-titre {
+        font-size: 30px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    .carte-para {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .carte-right {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 15px;
+    }
+    .carte-left {
+        margin-left: 15px;
+    }
+    /* CONTACT---------------------------------------------------------------------- */
+    .contact {
+        margin-top: 30px;
+        background-color: rgb(182, 182, 182);
+        height: 420px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+    .contact-title {
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .input {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    /* FOOTER---------------------------------------------------------------------- */
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .nav-mobile {
+        display: none;
+        margin-top: 50px;
+        margin-right: 25px;
+    }
+    .nav-ordi {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        display: block;
+    }
+    /* HEADER---------------------------------------------------------------------- */
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+    .bann-acc {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .moi {
+        font-size: 16px;
+        background-color: rgb(144, 144, 144);
+        margin-top: 70px;
+        border-radius: 30px;
+    }
+    .moi-title {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    /* PRESENTATION--------------------------------------------------------------- */
+    *, ::before, ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        background: #f1f1f1;
+        
+    }
+    
+    .container {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: auto;
+        height: 300px;
+        background: #f1f1f1;
+        border-radius: 2px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    .container-onglets{
+        margin-top: 25px;
+        background: #f1f1f1;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        border-bottom: 1px solid #333;
+    }
+    .onglets {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+    }
+    .onglets:not(:nth-child(3)) {
+        border-right: 1px solid #333;
+    }
+    
+    .contenu {
+        height: 70%;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+    }
+    .contenu h3 {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 25px;
+    }
+    .contenu hr {
+        width: 30%;
+        height: 2px;
+        margin-left: 20px;
+        background: #000;
+        border: none;
+    }
+    .contenu p {
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    /* Anim */
+    
+    .active {
+        background: midnightblue;
+        color: #f1f1f1;
+        transition: all 0.3s ease;
+    }
+    
+    .activeContenu {
+        animation: fade 0.5s forwards;
+    }
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+
+
+
+
+
+
+    /* TEMOIGNAGES---------------------------------------------------------------------- */
+    .temoignages {
+        border-radius: 30px;
+        background-color: rgb(141, 141, 141);
+        height:1800px;
+        margin-top: 700px;
+    }
+    .temoignages-title {
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .carte {
+        border: 1px solid black;
+        margin-top: 40px;
+        height: 225px;
+        width: 350px;
+        background-color: rgb(187, 187, 187);
+    }
+    .carte-header {
+        border: 1px solid black;
+        display: flex;
+    }
+    .carte-header-titre {
+        font-size: 30px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    .carte-para {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .carte-right {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 15px;
+    }
+    .carte-left {
+        margin-left: 15px;
+    }
+    /* CONTACT---------------------------------------------------------------------- */
+    .contact {
+        margin-top: 30px;
+        background-color: rgb(182, 182, 182);
+        height: 480px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+    .contact-title {
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .input {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    /* FOOTER---------------------------------------------------------------------- */
+}
+
+@media screen and (min-width: 1201px) {
+    .nav-mobile {
+        display: none;
+        margin-top: 50px;
+        margin-right: 25px;
+    }
+    .nav-ordi {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        display: block;
+    }
+    /* HEADER---------------------------------------------------------------------- */
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+    .bann-acc {
+        height: 300px;
+        margin-top: 180px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .moi {
+        margin-top: 120px;
+    }
+    .about {
+        font-size: 20px;
+    }
+    /*PRESENTATION--------------------------------------------------------------------------*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #f1f1f1;
+    
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 300px;
+    background: #f1f1f1;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container-onglets{
+    margin-top: 25px;
+    background: #f1f1f1;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+.onglets {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+.onglets:not(:nth-child(3)) {
+    border-right: 1px solid #333;
+}
+
+.contenu {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.contenu h3 {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+.contenu hr {
+    width: 30%;
+    height: 2px;
+    margin-left: 20px;
+    background: #000;
+    border: none;
+}
+.contenu p {
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* Anim */
+
+.active {
+    background: midnightblue;
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.activeContenu {
+    animation: fade 0.5s forwards;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+    /* TEMOIGNAGES---------------------------------------------------------------------- */
+    .temoignages {
+        border-radius: 30px;
+        background-color: rgb(141, 141, 141);
+        height: 1800px;
+        margin-top: 700px;
+    }
+    .temoignages-title {
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 70px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .carte {
+        border: 1px solid black;
+        margin-top: 40px;
+        height: 250px;
+        width: 550px;
+        background-color: rgb(187, 187, 187);
+    }
+    .carte-header {
+        border: 1px solid black;
+        display: flex;
+    }
+    .carte-header-titre {
+        font-size: 40px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    .carte-para {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .carte-right {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 15px;
+    }
+    .carte-left {
+        margin-left: 15px;
+    }
+    /* CONTACT---------------------------------------------------------------------- */
+    .contact {
+        margin-top: 30px;
+        background-color: rgb(182, 182, 182);
+        height: 480px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+    .contact-title {
+        padding-top: 20px;
+        text-decoration: underline;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .input {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    /* FOOTER---------------------------------------------------------------------- */
+}
